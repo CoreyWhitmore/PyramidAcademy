@@ -9,7 +9,8 @@ public class Land {
     public Land(){
         this.size = 5;
         human = new Human();
-        goblins.add(new Goblin(30,5,size,size));
+        goblins = new ArrayList<>();
+        goblins.add(new Goblin(30,5,this.size-1,this.size-1));
     }
 
     //parameterized Constructor

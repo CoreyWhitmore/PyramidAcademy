@@ -17,7 +17,7 @@ public class Main {
         ArrayList<Goblin> goblins = new ArrayList<>();
         //generate goblins
         for (int i = 0; i < gobs; i++){
-            Goblin gob = new Goblin(30, 5, (rand.nextInt(size-2)+2), (rand.nextInt(size-2))+2);
+            Goblin gob = new Goblin(30, 5, (rand.nextInt(size-3)+2), (rand.nextInt(size-2))+2);
             goblins.add(gob);
         }
         Land land = new Land(size, human, goblins);
